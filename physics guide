@@ -77,6 +77,20 @@ choose the lesson that you want to study''')
     time.sleep(0.18)
     print("Enter the chapter that you want to study: ")
 
+def exclemetry():
+    for i in range (4):
+        time.sleep(0.8)
+        print('!',end='')
+
+def dots():
+    for i in range (4):
+        time.sleep(0.8)
+        print('.',end='')
+
+def converting():
+    print("Converting",end='')
+    dots()
+
 # O P E N I N G . . .
 def opening():
     pr = "\nopening"
@@ -84,9 +98,7 @@ def opening():
     for g in pr:
         time.sleep(0.008)
         print(g, end='')
-    for v in op:
-        time.sleep(0.18)
-        print(v, end='')
+    dots()
 
 
 opening()
@@ -98,11 +110,12 @@ We hate to keep you waiting but unfortunately it looks like its gonna be a while
     for yt in ytb:
         time.sleep(0.08)
         print(yt, end='')
+    dots()
     quit()
 
 #E X I T 
 def Exit():
-    ex = "Initiating exiting protocal ..."
+    ex = "Initiating exiting protocal "
     for e in ex :
         time.sleep(0.08)
         print(e,end='')
@@ -290,14 +303,19 @@ Enter the menu number :'''
             value = float(input("Enter the value: "))
 
             if from_unit == 'm' and to_unit == 'cm':
+                converting()
                 print(value * 100, "cm")
             elif from_unit == 'cm' and to_unit == 'm':
+                converting()
                 print(value / 100, "m")
             elif from_unit == 'm' and to_unit == 'ft':
+                converting()
                 print(value * 3.28084, "ft" )
             elif from_unit == 'ft' and to_unit == 'm':
+                converting()
                 print(value / 3.28084,"m")
             else:
+                converting()
                 print("Invalid conversion")
 
         if choice == 2:
@@ -306,10 +324,13 @@ Enter the menu number :'''
             value = float(input("Enter the value: "))
 
             if from_unit == 'C' and to_unit == 'F':
+                converting()
                 print((value * 9/5) + 32,"F")
             elif from_unit == 'F' and to_unit == 'C':
+                converting()
                 print((value - 32) * 5/9,"C")
             else:
+                converting()
                 print("Invalid conversion")
 
         if choice == 3:
@@ -317,21 +338,61 @@ Enter the menu number :'''
             to_unit = input("Enter the unit you want to convert to (kg, lb, g): ")
             value = float(input("Enter the value: "))
             if from_unit == 'kg' and to_unit == 'lb':
+                converting()
                 print(value * 2.20462,"lb")
             elif from_unit == 'lb' and to_unit == 'kg':
+                converting()
                 print(value / 2.20462,"kg")
             elif from_unit == 'kg' and to_unit == 'g':
+                converting()
                 print(value * 1000,"g")
             elif from_unit == 'g' and to_unit == 'kg':
+                converting()
                 print(value / 10000,"kg")
             else:
+                converting()
                 print("Invalid conversion")
                       
 
 # D E R I V A T I O N S
-    if menu_number == 5:
-        ytba()
+    
+    var = True
+    while var:
+        if menu_number == 5:
+            menu_numericals = '''
+    Chapter 1: Electric Charges And Fields
+    Chapter 2: Electrostatic Potential And Capacitance
+    3. EXIT
+    '''
+            for menun in menu_numericals:
+                time.sleep(0.08)
+                print(menun,end='')
+            menu_num = int(input("Enter the chapter number: "))
 
+            
+             
+            if menu_num == 1:
+                print("Let's start",end='')
+                exclemetry()
+                print("you have work out the some for the given quetion and enter the answer to check wheter it correct or not/n else enter sol to get the solition")
+                print("------------------------------------------------------------------")
+                print("1 MARKS")
+                print("------------------------------------------------------------------")
+                print("1. Does the Force Between Two Point Charges \nChange if the Dielectric Constant of the Medium in Which they are Kept is Increased?")
+                
+                choice = input("Enter your choice (sol/your answer): ")
+
+                if choice == " as k is increased, FM gets decreased":
+                    print("Your answer is correct")
+                    var = False
+                elif choice == "sol":
+                    print(" as k is increased, FM gets decreased")
+                    var = False 
+                else:
+                    print("The anwer you have entered is wrong.Try again")
+                    print("Note: even though your answer is correct it might not be accurate or what the compliler is expecting if you have confidenc\n in your answer check with the solution(Enter sol) to verify")
+
+            
 # D E F E N I T I O N S
     if menu_number == 6:
         ytba()
@@ -342,10 +403,11 @@ Enter the menu number :'''
         Exit()
     
 
-
+show_menu()
 # O U T P U T
+print("\nWelcome again")
 while True:
-    print("Welcome again")
     time.sleep(3)
     show_menu()
+
 
