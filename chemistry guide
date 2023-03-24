@@ -1,0 +1,237 @@
+print("Note: this program has not yet been developed this is just a prototype of how it looks")
+import webbrowser as wb
+import time
+def chem():
+
+    menuc = '''
+
+Unit 1 – The Solid State
+----------------------------------------------------------------------------
+Unit 2 – Solutions
+----------------------------------------------------------------------------
+unit 3 – Electrochemistry
+----------------------------------------------------------------------------
+Unit 4 – Chemical Kinetics
+----------------------------------------------------------------------------
+Unit 5 – Surface Chemistry
+----------------------------------------------------------------------------
+Unit 6 – General Principles and Processes of Isolation of Elements
+----------------------------------------------------------------------------
+Unit 7 – The p-Block Elements
+----------------------------------------------------------------------------
+Unit 8 – The d-and f-Block Elements
+----------------------------------------------------------------------------
+Unit 9 – Coordination Compounds
+----------------------------------------------------------------------------
+Unit 10 – Haloalkanes and Haloarenes
+----------------------------------------------------------------------------
+Unit 11 – Alcohols, Phenols and Ethers
+----------------------------------------------------------------------------
+Unit 12 – Aldehydes, Ketones and Carboxylic Acids
+----------------------------------------------------------------------------
+Unit 13 – Amines
+----------------------------------------------------------------------------
+Unit 14 – Biomolecules
+----------------------------------------------------------------------------
+Unit 15 – Polymers
+----------------------------------------------------------------------------
+Unit 16 – Chemistry in Everyday Life
+----------------------------------------------------------------------------
+'''
+    for s in menuc:
+        time.sleep(0.001)
+        print(s,end='')
+    chapterc = int(input("Enter the chemistry chapter number: "))
+    if chapterc == 1:
+        pathc1 = 'https://drive.google.com/file/d/1ZDWjEIhm-I2jhjGYx6dHVREA-_z6RUUp/view?usp=share_link'
+        pr = "opening"
+        op = "..."
+        for g in pr:
+            time.sleep(0.008)
+            print (g,end='')
+        for v in op:
+            time.sleep(0.18)
+            print(v,end='')
+        wb.open_new(pathc1)
+
+    if chapterc == 2:
+        pathc2= 'https://drive.google.com/file/d/16Ke2aX2GjxOqE-24rxvRCFZOkQBpFeRx/view?usp=share_link'
+        pr = "opening"
+        op = "..."
+        for g in pr:
+            time.sleep(0.008)
+            print (g,end='')
+        for v in op:
+            time.sleep(0.18)
+            print(v,end='')
+        wb.open_new(pathc2)
+
+    if chapterc == 3:
+        pathc3 = 'https://drive.google.com/file/d/1INCpaE1nStuKIbwHQOf865Q8hdk4piED/view?usp=share_link'
+        pr = "opening"
+        op = "..."
+        for g in pr:
+            time.sleep(0.008)
+            print (g,end='')
+        for v in op:
+            time.sleep(0.18)
+            print(v,end='')
+        wb.open_new(pathc3)
+
+    if chapterc == 4:
+        pathc4 = 'https://drive.google.com/file/d/1iClyQJn7jWXWsr7eKQuw-skAG63R4Z6e/view?usp=share_link'
+        pr = "opening"
+        op = "..."
+        for g in pr:
+            time.sleep(0.008)
+            print (g,end='')
+        for v in op:
+            time.sleep(0.18)
+            print(v,end='')
+        wb.open_new(pathc4)
+
+    if chapterc == 5:
+        pathc5 = 'https://drive.google.com/file/d/1TX0B_0lFATsz0laSc-h144O7rP4Z2pTU/view?usp=share_link'
+        pr = "opening"
+        op = "..."
+        for g in pr:
+            time.sleep(0.008)
+            print (g,end='')
+        for v in op:
+            time.sleep(0.18)
+            print(v,end='')
+        wb.open_new(pathc5)
+
+
+    if chapterc == 6:
+        pathc6 = 'https://drive.google.com/file/d/1NvXt24tQsN6D0IHmwfXSVXdUOmOcmKuh/view?usp=share_link'
+        pr = "opening"
+        op = "..."
+        for g in pr:
+            time.sleep(0.008)
+            print (g,end='')
+        for v in op:
+            time.sleep(0.18)
+            print(v,end='')
+        wb.open_new(pathc6)
+
+    if chapterc == 7:
+        pathc7 = 'https://drive.google.com/file/d/1NM-hiqVOCbev8eB09BJd95yt5S8mWgi-/view?usp=share_link'
+        pr = "opening"
+        op = "..."
+        for g in pr:
+            time.sleep(0.008)
+            print (g,end='')
+        for v in op:
+            time.sleep(0.18)
+            print(v,end='')
+        wb.open_new(pathc7)
+
+    if chapterc == 8:
+        pathc8 = 'https://drive.google.com/file/d/1xNGsxRpqhPH9GfA5fivXHQCSzY2z8hI_/view?usp=share_link'
+        pr = "opening"
+        op = "..."
+        for g in pr:
+            time.sleep(0.008)
+            print (g,end='')
+        for v in op:
+            time.sleep(0.18)
+            print(v,end='')
+        wb.open_new(pathc8)
+
+    if chapterc == 9:
+        pathc9 = 'https://drive.google.com/file/d/1_w_vzk-_RBdQ5gJnOY9TvWHVGAj0QyGX/view?usp=share_link'
+        pr = "opening"
+        op = "..."
+        for g in pr:
+            time.sleep(0.008)
+            print (g,end='')
+        for v in op:
+            time.sleep(0.18)
+            print(v,end='')
+        wb.open_new(pathc9)
+
+    if chapterc == 10:
+        pathc10 = 'https://drive.google.com/file/d/1_Nm-zU3Hk1DjvcsBl-rIPM3loIx2X7kW/view?usp=share_link'
+        pr = "opening"
+        op = "..."
+        for g in pr:
+            time.sleep(0.008)
+            print (g,end='')
+        for v in op:
+            time.sleep(0.18)
+            print(v,end='')
+        wb.open_new(pathc10)
+
+    if chapterc == 11:
+        pathc11 = 'https://drive.google.com/file/d/1hjyzKNx3pfBK4NYUn7Fb2aXbtdiRo8jE/view?usp=share_link'
+        pr = "opening"
+        op = "..."
+        for g in pr:
+            time.sleep(0.008)
+            print (g,end='')
+        for v in op:
+            time.sleep(0.18)
+            print(v,end='')
+        wb.open_new(pathc11)
+
+    if chapterc == 12:
+        pathc12 = 'https://drive.google.com/file/d/1MfS48Q5sg0q05wA39OIPs2ubAyN3gYOa/view?usp=share_link'
+        pr = "opening"
+        op = "..."
+        for g in pr:
+            time.sleep(0.008)
+            print (g,end='')
+        for v in op:
+            time.sleep(0.18)
+            print(v,end='')
+        wb.open_new(pathc12)
+
+    if chapterc == 13:
+        pathc13 = 'https://drive.google.com/file/d/1HwpkX9AkGkrCwZjBxveRzuwHVlF0SoNf/view?usp=share_link'
+        pr = "opening"
+        op = "..."
+        for g in pr:
+            time.sleep(0.008)
+            print (g,end='')
+        for v in op:
+            time.sleep(0.18)
+            print(v,end='')
+        wb.open_new(pathc13)
+
+    if chapterc == 14:
+        pathc14 = 'https://drive.google.com/file/d/1eYkg8cUrTC0ymTO0bOM04ddltzdurRRn/view?usp=share_link'
+        pr = "opening"
+        op = "..."
+        for g in pr:
+            time.sleep(0.008)
+            print (g,end='')
+        for v in op:
+            time.sleep(0.18)
+            print(v,end='')
+        wb.open_new(pathc14)
+
+    if chapterc == 15:
+        pathc15 = 'https://drive.google.com/file/d/1EZRWDeYeJszVWBjHP2zmvew-vCn-cyjW/view?usp=share_link'
+        pr = "opening"
+        op = "..."
+        for g in pr:
+            time.sleep(0.008)
+            print (g,end='')
+        for v in op:
+            time.sleep(0.18)
+            print(v,end='')
+        wb.open_new(pathc15)
+
+    if chapterc == 16:
+        pathc16 = 'https://drive.google.com/file/d/1FDHBZlkyTqm7H9YNgrUL7_TyzkdUn7fA/view?usp=share_link'
+        pr = "opening"
+        op = "..."
+        for g in pr:
+            time.sleep(0.008)
+            print (g,end='')
+        for v in op:
+            time.sleep(0.18)
+            print(v,end='')
+        wb.open_new(pathc16)
+chem()

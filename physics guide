@@ -1,0 +1,351 @@
+# I M P O R T I N G
+import time
+import webbrowser as wb
+import random as rd
+
+# I N T R O D U C T I O N
+Introduction = "Hello !!!\n welcome to your physics guide"
+for intro in Introduction:
+    time.sleep(0.008)
+    print(intro, end='')
+
+# 1. Book pdf (lesson number)
+# 2. Notes(lesson number)
+# 3. Sample questions (Theory)(Random generation)
+# 4. Unit converter (unit name)
+# 5. Numericals(lesson number)
+# 6. Defenitions(term)
+# 7. EXIT
+
+# L E S S O N   N A M E
+def index():
+    print('''
+
+choose the lesson that you want to study''')
+    time.sleep(0.08)
+    print('''
+----------------------------------------------------------------------------''')
+    time.sleep(0.08)
+    print('''Chapter 1: Electric Charges And Fields
+----------------------------------------------------------------------------''')
+
+    time.sleep(0.08)
+    print('''Chapter 2: Electrostatic Potential And Capacitance
+----------------------------------------------------------------------------''')
+    time.sleep(0.08)
+    print('''Chapter 3:Current Electricity
+----------------------------------------------------------------------------''')
+    time.sleep(0.08)
+    print('''Chapter 4:Moving Charges and Magnetism
+----------------------------------------------------------------------------''')
+    time.sleep(0.08)
+    print('''Chapter 5:Magnetism and Matter
+----------------------------------------------------------------------------''')
+    time.sleep(0.08)
+    print('''Chapter 6:Electromagnetic Induction
+----------------------------------------------------------------------------''')
+    time.sleep(0.08)
+    print('''Chapter 7:Alternating Current
+----------------------------------------------------------------------------''')
+    time.sleep(0.08)
+    print('''Chapter 8:Electromagnetic Waves
+----------------------------------------------------------------------------''')
+    time.sleep(0.08)
+    print('''Chapter 9:Ray Optics and Optical Instruments
+----------------------------------------------------------------------------''')
+    time.sleep(0.08)
+    print('''Chapter 10:Wave Optics
+----------------------------------------------------------------------------''')
+    time.sleep(0.08)
+    print('''Chapter 11:Dual Nature of Radiation and Matter
+----------------------------------------------------------------------------''')
+    time.sleep(0.08)
+    print('''Chapter 12:Atoms
+----------------------------------------------------------------------------''')
+    time.sleep(0.08)
+    print('''Chapter 13: Nuclei
+----------------------------------------------------------------------------''')
+    time.sleep(0.08)
+    print('''Chapter 14:Semiconductor Electronics: Materials, Devices, and Simple Circuits
+----------------------------------------------------------------------------''')
+    time.sleep(0.08)
+    print('''15. Extra revision notes
+----------------------------------------------------------------------------''')
+    time.sleep(0.08)
+    print('''16. EXIT
+----------------------------------------------------------------------------''')
+    time.sleep(0.18)
+    print("Enter the chapter that you want to study: ")
+
+# O P E N I N G . . .
+def opening():
+    pr = "\nopening"
+    op = "..."
+    for g in pr:
+        time.sleep(0.008)
+        print(g, end='')
+    for v in op:
+        time.sleep(0.18)
+        print(v, end='')
+
+
+opening()
+
+# Y E T   T O  BE  A D D E D
+def ytba():
+    ytb = '''
+We hate to keep you waiting but unfortunately it looks like its gonna be a while for this feature to be added untill then enjoy the first 4 feautures '''
+    for yt in ytb:
+        time.sleep(0.08)
+        print(yt, end='')
+    quit()
+
+#E X I T 
+def Exit():
+    ex = "Initiating exiting protocal ..."
+    for e in ex :
+        time.sleep(0.08)
+        print(e,end='')
+    time.sleep(3)
+    quit()
+# M E N U
+def show_menu():
+    menu = '''
+1. Book pdf 
+2. Notes
+3. Sample questions (Theory)
+4. Unit converter
+5. Numericals
+6. Defenitions
+7. EXIT
+Enter the menu number :'''
+    for m in menu:
+        time.sleep(0.008)
+        print(m, end='')
+
+    menu_number = int(input())
+
+# M A I N   P R O G R A M
+
+# B O O K
+    if menu_number == 1:
+
+        # I N D E X
+        index()
+
+# O P E N E R
+        chapterp = int(input())
+
+        if chapterp == 1:
+            pathp1 = 'https://drive.google.com/file/d/17RnbEFGoup4WIfhsBl7RtDuBI-T9L6dl/view?usp=sharing'
+            opening()
+            wb.open_new(pathp1)
+
+        if chapterp == 2:
+            pathp2 = 'https://drive.google.com/file/d/1lDwUgWOo578hfvEb8L0fheZ16VtO2t5e/view?usp=sharing'
+            opening()
+            wb.open_new(pathp2)
+
+        if chapterp == 3:
+            pathp3 = 'https://drive.google.com/file/d/1VQyjrpurD_oOoVme80YWRWoP0quMDHhZ/view?usp=sharing'
+            opening()
+            wb.open_new(pathp3)
+
+        if chapterp == 4:
+            pathp4 = 'https://drive.google.com/file/d/1XBzUWpLTBR1VXB3t8c1GgusiB7gzWWl6/view?usp=sharing'
+            opening()
+            wb.open_new(pathp4)
+
+        if chapterp == 5:
+            pathp5 = 'https://drive.google.com/file/d/1WV-Cks0cCA3AnNoAiyFQezOm8VW68Bt3/view?usp=sharing'
+            opening()
+            wb.open_new(pathp5)
+
+        if chapterp == 6:
+            pathp6 = 'https://drive.google.com/file/d/1IDLaBboThXPcfbljfsLiXOQMy3jbBBJJ/view?usp=sharing'
+            opening()
+            wb.open_new(pathp6)
+
+        if chapterp == 7:
+            pathp7 = 'https://drive.google.com/file/d/12X9we22fs5igH5DoNeRwJgaNZwi8YVc1/view?usp=sharing'
+            opening()
+            wb.open_new(pathp7)
+
+        if chapterp == 9:
+            pathp9 = 'https://drive.google.com/file/d/1ywN6FtYJ1s6cAHuK8x6DDJ571ePKnQec/view?usp=sharing'
+            opening()
+            wb.open_new(pathp9)
+
+        if chapterp == 10:
+            pathp10 = 'https://drive.google.com/file/d/1MuJpknBuaqHmoofhRVcOJq6j7_C_1DxY/view?usp=sharing'
+            opening()
+            wb.open_new(pathp10)
+
+        if chapterp == 11:
+            pathp11 = 'https://drive.google.com/file/d/1Lsf7OLgmm0nbKWwCfIEScxDF2qnQKqBp/view?usp=sharing'
+            opening()
+            wb.open_new(pathp11)
+
+        if chapterp == 12:
+            pathp12 = 'https://drive.google.com/file/d/1MwWPTBVQDyqUx4_CjNWbX_Z0X-ZAMTEg/view?usp=sharing'
+            opening()
+            wb.open_new(pathp12)
+
+        if chapterp == 13:
+            pathp13 = 'https://drive.google.com/file/d/1LCkS4TCifVlv_-AZ4Ul0qVWqs_j3QVyy/view?usp=sharing'
+            opening()
+            wb.open_new(pathp13)
+
+        if chapterp == 14:
+            pathp14 = 'https://drive.google.com/file/d/1a78WVeu9hIkBv-q9Ls5ZUK7E4olwf1ex/view?usp=sharing'
+            opening()
+            wb.open_new(pathp14)
+
+        if chapterp == 15:
+            pathp15 = 'https://www.savemyexams.co.uk/a-level/physics/cie/22/revision-notes/'
+            opening()
+            wb.open_new(pathp15)
+
+        if chapterp == 16:
+            quit()
+
+# N O T E S
+    if menu_number == 2:
+
+        # O P E N E R
+        print('''
+
+    choose the lesson that you want to study''')
+        time.sleep(0.08)
+        print('''
+----------------------------------------------------------------------------''')
+        time.sleep(0.08)
+        print('''Chapter 1: Electric Charges And Fields
+----------------------------------------------------------------------------''')
+
+        time.sleep(0.08)
+        print('''Chapter 2: Electrostatic Potential And Capacitance
+----------------------------------------------------------------------------
+    ''')
+        print('''3. Derivations
+----------------------------------------------------------------------------'''        )
+        print("4. EXIT\n")
+
+        time.sleep(1)
+        choice = int(input("Choose the chapter number: "))
+
+        if choice == 1:
+            pathn1 = "https://drive.google.com/file/d/12lknvtIK7uaHSOoz6vJ1rI7746eHgSCv/view?usp=share_link"
+            opening()
+            wb.open_new(pathn1)
+
+        if choice == 2:
+            pathn2 = "https://drive.google.com/file/d/1Zc-FHi_VLshbH5o-6uZRAGOeOzgzUl6l/view?usp=share_link"
+            opening()
+            wb.open_new(pathn2)
+
+        if choice == 3:
+            pathn3 = "https://drive.google.com/file/d/1GB5B9cT8svMTO2x-3uS7zpxr7sv_Nz5g/view?usp=share_link"
+            opening()
+            wb.open_new(pathn3)
+
+        if choice == 4:
+            quit()
+
+# S A M P L E  P A P E R
+    if menu_number == 3:
+        sample_paper = input(
+            "\nEnter s for to open a random sample paper and q to quit: ")
+
+# L I N K S
+        paper_links = {1: "https://drive.google.com/file/d/10ArP6HtGo5pKQBK3_9M3FMVCxvdPfydZ/view?usp=share_link", 2: "https://drive.google.com/file/d/1XQkR8sa8bB8mu2iQpk5EHibSSgw8jRd6/view?usp=share_link",
+                       3: "https://drive.google.com/file/d/1Yl0cd7Xdnqq-YWA8CsVxKEKob6gJVz6E/view?usp=share_link", 4: "https://drive.google.com/file/d/1JMOjfLSmEMxJ2iymQuLI5i5Cnu33YAAb/view?usp=share_link", 5: "https://drive.google.com/file/d/1ymDqJcv7Qy3qjrZfFzaSohLf091SEyBi/view?usp=share_link"}
+
+# O P E N E R
+        if sample_paper == "s":
+            random_index = rd.randint(1, 5)
+            paper = paper_links[random_index]
+            opening()
+            wb.open_new(paper)
+
+        else:
+            quit()
+
+# U N I T  C O N V E R T E R
+    if menu_number == 4:
+        print("Select conversion type:")
+        menu_unit_converter='''
+1. Length
+2. Temperature
+3. Weight
+4. Time'''
+        for menu_unit in menu_unit_converter:
+            time.sleep(0.008)
+            print(menu_unit,end='')
+        choice = int(input("Enter your choice (1/2/3): "))
+
+        if choice == 1:
+            from_unit = input("Enter the unit you want to convert from (m, cm, ft): ")
+            to_unit = input("Enter the unit you want to convert to (m, cm, ft): ")
+            value = float(input("Enter the value: "))
+
+            if from_unit == 'm' and to_unit == 'cm':
+                print(value * 100, "cm")
+            elif from_unit == 'cm' and to_unit == 'm':
+                print(value / 100, "m")
+            elif from_unit == 'm' and to_unit == 'ft':
+                print(value * 3.28084, "ft" )
+            elif from_unit == 'ft' and to_unit == 'm':
+                print(value / 3.28084,"m")
+            else:
+                print("Invalid conversion")
+
+        if choice == 2:
+            from_unit = input("Enter the unit you want to convert from (C, F): ")
+            to_unit = input("Enter the unit you want to convert to (C, F): ")
+            value = float(input("Enter the value: "))
+
+            if from_unit == 'C' and to_unit == 'F':
+                print((value * 9/5) + 32,"F")
+            elif from_unit == 'F' and to_unit == 'C':
+                print((value - 32) * 5/9,"C")
+            else:
+                print("Invalid conversion")
+
+        if choice == 3:
+            from_unit = input("Enter the unit you want to convert from (kg, lb, g): ")
+            to_unit = input("Enter the unit you want to convert to (kg, lb, g): ")
+            value = float(input("Enter the value: "))
+            if from_unit == 'kg' and to_unit == 'lb':
+                print(value * 2.20462,"lb")
+            elif from_unit == 'lb' and to_unit == 'kg':
+                print(value / 2.20462,"kg")
+            elif from_unit == 'kg' and to_unit == 'g':
+                print(value * 1000,"g")
+            elif from_unit == 'g' and to_unit == 'kg':
+                print(value / 10000,"kg")
+            else:
+                print("Invalid conversion")
+                      
+
+# D E R I V A T I O N S
+    if menu_number == 5:
+        ytba()
+
+# D E F E N I T I O N S
+    if menu_number == 6:
+        ytba()
+
+# Q U I T
+    if menu_number == 7:
+        print("T H A N K S  F O R  U S I N G  O U R  G U I D E")
+        Exit()
+    
+
+
+# O U T P U T
+while True:
+    print("Welcome again")
+    time.sleep(3)
+    show_menu()
+
