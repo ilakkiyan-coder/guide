@@ -3,19 +3,34 @@ import time
 import webbrowser as wb
 import random as rd
 
+#W E L C O M E
+WELCOME = '''***************************************************************************
+**********************************WELCOME**********************************
+***************************************************************************
+
+'''
+for w in WELCOME:
+    time.sleep(0.005)
+    print(w,end='')
+
+#Q U O T E 
+L1 = ["Don’t let what you cannot do interfere with what you can do.","Successful and unsuccessful people do not vary greatly in their abilities. They vary in their desires to reach their potential.","Strive for progress, not perfection.","There are no shortcuts to any place worth going.","Failure is the opportunity to begin again more intelligently.","Failure is the opportunity to begin again more intelligently.","You’ve got to get up every morning with determination if you’re going to go to bed with satisfaction."]
+R1 = rd.randint(1,6)
+R  ="qoute:",L1[R1]  
+for hi in R:
+    time.sleep(0.018)
+    print(hi,end='')
 # I N T R O D U C T I O N
-Introduction = "Hello !!!\n welcome to your physics guide"
+Introduction = "\nHELLO THERE!!! THIS IS PROGRAM CREATED ESPECIALY FOR CLASS 12 STUDENTS TO MAKE IT \nEASIER TO ACCESS FILES LIKE NOTES AND SAMPLE PAPER FROM ONE PLACE"
 for intro in Introduction:
-    time.sleep(0.008)
+    time.sleep(0.028)
     print(intro, end='')
 
 # 1. Book pdf (lesson number)
 # 2. Notes(lesson number)
 # 3. Sample questions (Theory)(Random generation)
 # 4. Unit converter (unit name)
-# 5. Numericals(lesson number)
-# 6. Defenitions(term)
-# 7. EXIT
+# 5. EXIT
 
 # L E S S O N   N A M E
 def index():
@@ -77,45 +92,37 @@ choose the lesson that you want to study''')
     time.sleep(0.18)
     print("Enter the chapter that you want to study: ")
 
-def exclemetry():
-    for i in range (4):
-        time.sleep(0.8)
-        print('!',end='')
-
-def dots():
-    for i in range (4):
-        time.sleep(0.8)
-        print('.',end='')
-
-def converting():
-    print("Converting",end='')
-    dots()
-
 # O P E N I N G . . .
+
 def opening():
     pr = "\nopening"
-    op = "..."
     for g in pr:
         time.sleep(0.008)
         print(g, end='')
-    dots()
+    for v in range(3):
+        time.sleep(0.18)
+        print(".", end='')
+
 
 
 opening()
 
+#C O N V E R T I N G
+def converting():
+    print("converting",end="")
+    for i in range (3):
+        time.sleep(0.8)
+        print(".",end="")
+
 # Y E T   T O  BE  A D D E D
-def ytba():
-    ytb = '''
-We hate to keep you waiting but unfortunately it looks like its gonna be a while for this feature to be added untill then enjoy the first 4 feautures '''
-    for yt in ytb:
-        time.sleep(0.08)
-        print(yt, end='')
-    dots()
-    quit()
+def exclemetry():
+    for i in range (3):
+        time.sleep(0.8)
+        print("!",end ="")
 
 #E X I T 
 def Exit():
-    ex = "Initiating exiting protocal "
+    ex = "Initiating exiting protocal ..."
     for e in ex :
         time.sleep(0.08)
         print(e,end='')
@@ -128,12 +135,10 @@ def show_menu():
 2. Notes
 3. Sample questions (Theory)
 4. Unit converter
-5. Numericals
-6. Defenitions
-7. EXIT
+5. EXIT
 Enter the menu number :'''
     for m in menu:
-        time.sleep(0.008)
+        time.sleep(0.028)
         print(m, end='')
 
     menu_number = int(input())
@@ -238,9 +243,9 @@ Enter the menu number :'''
 
         time.sleep(0.08)
         print('''Chapter 2: Electrostatic Potential And Capacitance
-----------------------------------------------------------------------------
-    ''')
-        print('''3. Derivations
+----------------------------------------------------------------------------''')
+        time.sleep(0.08)
+        print('''\n3. Derivations
 ----------------------------------------------------------------------------'''        )
         print("4. EXIT\n")
 
@@ -291,7 +296,7 @@ Enter the menu number :'''
 1. Length
 2. Temperature
 3. Weight
-4. Time'''
+4. EXIT'''
         for menu_unit in menu_unit_converter:
             time.sleep(0.008)
             print(menu_unit,end='')
@@ -304,18 +309,17 @@ Enter the menu number :'''
 
             if from_unit == 'm' and to_unit == 'cm':
                 converting()
-                print(value * 100, "cm")
+                print("\n",value * 100, "cm")
             elif from_unit == 'cm' and to_unit == 'm':
                 converting()
-                print(value / 100, "m")
+                print("\n",value / 100, "m")
             elif from_unit == 'm' and to_unit == 'ft':
                 converting()
-                print(value * 3.28084, "ft" )
+                print("\n",value * 3.28084, "ft" )
             elif from_unit == 'ft' and to_unit == 'm':
                 converting()
-                print(value / 3.28084,"m")
+                print("\n",value / 3.28084,"m")
             else:
-                converting()
                 print("Invalid conversion")
 
         if choice == 2:
@@ -324,13 +328,13 @@ Enter the menu number :'''
             value = float(input("Enter the value: "))
 
             if from_unit == 'C' and to_unit == 'F':
+
                 converting()
-                print((value * 9/5) + 32,"F")
+                print("\n",value * 9/5 + 32,"F")
             elif from_unit == 'F' and to_unit == 'C':
                 converting()
-                print((value - 32) * 5/9,"C")
+                print("\n",value - 32 * 5/9,"C")
             else:
-                converting()
                 print("Invalid conversion")
 
         if choice == 3:
@@ -339,75 +343,32 @@ Enter the menu number :'''
             value = float(input("Enter the value: "))
             if from_unit == 'kg' and to_unit == 'lb':
                 converting()
-                print(value * 2.20462,"lb")
+                print("\n",value * 2.20462,"lb")
             elif from_unit == 'lb' and to_unit == 'kg':
                 converting()
-                print(value / 2.20462,"kg")
+                print("\n",value / 2.20462,"kg")
             elif from_unit == 'kg' and to_unit == 'g':
                 converting()
-                print(value * 1000,"g")
+                print("\n",value * 1000,"g")
             elif from_unit == 'g' and to_unit == 'kg':
                 converting()
-                print(value / 10000,"kg")
+                print("\n",value / 10000,"kg")
             else:
-                converting()
                 print("Invalid conversion")
+        if choice == 4:
+            quit()
                       
-
-# D E R I V A T I O N S
-    
-    var = True
-    while var:
-        if menu_number == 5:
-            menu_numericals = '''
-    Chapter 1: Electric Charges And Fields
-    Chapter 2: Electrostatic Potential And Capacitance
-    3. EXIT
-    '''
-            for menun in menu_numericals:
-                time.sleep(0.08)
-                print(menun,end='')
-            menu_num = int(input("Enter the chapter number: "))
-
-            
-             
-            if menu_num == 1:
-                print("Let's start",end='')
-                exclemetry()
-                print("you have work out the some for the given quetion and enter the answer to check wheter it correct or not/n else enter sol to get the solition")
-                print("------------------------------------------------------------------")
-                print("1 MARKS")
-                print("------------------------------------------------------------------")
-                print("1. Does the Force Between Two Point Charges \nChange if the Dielectric Constant of the Medium in Which they are Kept is Increased?")
-                
-                choice = input("Enter your choice (sol/your answer): ")
-
-                if choice == " as k is increased, FM gets decreased":
-                    print("Your answer is correct")
-                    var = False
-                elif choice == "sol":
-                    print(" as k is increased, FM gets decreased")
-                    var = False 
-                else:
-                    print("The anwer you have entered is wrong.Try again")
-                    print("Note: even though your answer is correct it might not be accurate or what the compliler is expecting if you have confidenc\n in your answer check with the solution(Enter sol) to verify")
-
-            
-# D E F E N I T I O N S
-    if menu_number == 6:
-        ytba()
-
 # Q U I T
-    if menu_number == 7:
+    if menu_number == 5:
         print("T H A N K S  F O R  U S I N G  O U R  G U I D E")
         Exit()
     
 
-show_menu()
+
 # O U T P U T
-print("\nWelcome again")
+show_menu()
 while True:
+    time.sleep(1)
+    print("\nWELCOME AGAIN")
     time.sleep(3)
     show_menu()
-
-
