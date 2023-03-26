@@ -2,6 +2,17 @@
 import time
 import webbrowser as wb
 import random as rd
+import sys,subprocess
+
+#Q U O T E 
+quote = ["Don’t let what you cannot do interfere with what you can do.","Successful and unsuccessful people do not vary greatly in their abilities. They vary in their desires to reach their potential.","Strive for progress, not perfection.","There are no shortcuts to any place worth going.","Failure is the opportunity to begin again more intelligently.","Failure is the opportunity to begin again more intelligently.","You’ve got to get up every morning with determination if you’re going to go to bed with satisfaction."]
+random_generation = rd.randint(1,6)
+randomly_generater_quote  ="qoute:", quote[random_generation] 
+print("\n")
+for q in randomly_generater_quote:
+    time.sleep(0.08)
+    print(q,end='')
+print("\n")
 
 #W E L C O M E
 WELCOME = '''***************************************************************************
@@ -13,15 +24,9 @@ for w in WELCOME:
     time.sleep(0.005)
     print(w,end='')
 
-#Q U O T E 
-L1 = ["Don’t let what you cannot do interfere with what you can do.","Successful and unsuccessful people do not vary greatly in their abilities. They vary in their desires to reach their potential.","Strive for progress, not perfection.","There are no shortcuts to any place worth going.","Failure is the opportunity to begin again more intelligently.","Failure is the opportunity to begin again more intelligently.","You’ve got to get up every morning with determination if you’re going to go to bed with satisfaction."]
-R1 = rd.randint(1,6)
-R  ="qoute:",L1[R1]  
-for hi in R:
-    time.sleep(0.018)
-    print(hi,end='')
+
 # I N T R O D U C T I O N
-Introduction = "\nHELLO THERE!!! THIS IS PROGRAM CREATED ESPECIALY FOR CLASS 12 STUDENTS TO MAKE IT \nEASIER TO ACCESS FILES LIKE NOTES AND SAMPLE PAPER FROM ONE PLACE"
+Introduction = ("\nHELLO THERE!!! THIS IS PROGRAM CREATED ESPECIALY FOR CLASS 12 STUDENTS TO MAKE IT \nEASIER TO ACCESS FILES LIKE NOTES AND SAMPLE PAPER FROM ONE PLACE\n")
 for intro in Introduction:
     time.sleep(0.028)
     print(intro, end='')
@@ -102,8 +107,7 @@ def opening():
     for v in range(3):
         time.sleep(0.18)
         print(".", end='')
-
-
+    print("\n")    
 
 opening()
 
@@ -120,27 +124,38 @@ def exclemetry():
         time.sleep(0.8)
         print("!",end ="")
 
+#C L E A R I N G   T H E   S C R E E N 
+def clear_screen():
+    run_again = 'PRESS ENTER TO RUN AGAIN...'
+    for r in run_again:
+        time.sleep(0.08)
+        print(r,end='')
+    input()
+    subprocess.run('cls', shell=True)
+    
+
+
 #E X I T 
 def Exit():
     ex = "Initiating exiting protocal ..."
     for e in ex :
         time.sleep(0.08)
         print(e,end='')
+    print("\n")
     time.sleep(3)
     quit()
 # M E N U
 def show_menu():
-    menu = '''
-1. Book pdf 
+    menu = '''1. Book pdf 
 2. Notes
 3. Sample questions (Theory)
 4. Unit converter
 5. EXIT
-Enter the menu number :'''
+Enter the menu number : '''
     for m in menu:
         time.sleep(0.028)
         print(m, end='')
-
+    print(end='')
     menu_number = int(input())
 
 # M A I N   P R O G R A M
@@ -159,76 +174,79 @@ Enter the menu number :'''
             opening()
             wb.open_new(pathp1)
 
-        if chapterp == 2:
+        elif chapterp == 2:
             pathp2 = 'https://drive.google.com/file/d/1lDwUgWOo578hfvEb8L0fheZ16VtO2t5e/view?usp=sharing'
             opening()
             wb.open_new(pathp2)
 
-        if chapterp == 3:
+        elif chapterp == 3:
             pathp3 = 'https://drive.google.com/file/d/1VQyjrpurD_oOoVme80YWRWoP0quMDHhZ/view?usp=sharing'
             opening()
             wb.open_new(pathp3)
 
-        if chapterp == 4:
+        elif chapterp == 4:
             pathp4 = 'https://drive.google.com/file/d/1XBzUWpLTBR1VXB3t8c1GgusiB7gzWWl6/view?usp=sharing'
             opening()
             wb.open_new(pathp4)
 
-        if chapterp == 5:
+        elif chapterp == 5:
             pathp5 = 'https://drive.google.com/file/d/1WV-Cks0cCA3AnNoAiyFQezOm8VW68Bt3/view?usp=sharing'
             opening()
             wb.open_new(pathp5)
 
-        if chapterp == 6:
+        elif chapterp == 6:
             pathp6 = 'https://drive.google.com/file/d/1IDLaBboThXPcfbljfsLiXOQMy3jbBBJJ/view?usp=sharing'
             opening()
             wb.open_new(pathp6)
 
-        if chapterp == 7:
+        elif chapterp == 7:
             pathp7 = 'https://drive.google.com/file/d/12X9we22fs5igH5DoNeRwJgaNZwi8YVc1/view?usp=sharing'
             opening()
             wb.open_new(pathp7)
 
-        if chapterp == 9:
+        elif chapterp == 9:
             pathp9 = 'https://drive.google.com/file/d/1ywN6FtYJ1s6cAHuK8x6DDJ571ePKnQec/view?usp=sharing'
             opening()
             wb.open_new(pathp9)
 
-        if chapterp == 10:
+        elif chapterp == 10:
             pathp10 = 'https://drive.google.com/file/d/1MuJpknBuaqHmoofhRVcOJq6j7_C_1DxY/view?usp=sharing'
             opening()
             wb.open_new(pathp10)
 
-        if chapterp == 11:
+        elif chapterp == 11:
             pathp11 = 'https://drive.google.com/file/d/1Lsf7OLgmm0nbKWwCfIEScxDF2qnQKqBp/view?usp=sharing'
             opening()
             wb.open_new(pathp11)
 
-        if chapterp == 12:
+        elif chapterp == 12:
             pathp12 = 'https://drive.google.com/file/d/1MwWPTBVQDyqUx4_CjNWbX_Z0X-ZAMTEg/view?usp=sharing'
             opening()
             wb.open_new(pathp12)
 
-        if chapterp == 13:
+        elif chapterp == 13:
             pathp13 = 'https://drive.google.com/file/d/1LCkS4TCifVlv_-AZ4Ul0qVWqs_j3QVyy/view?usp=sharing'
             opening()
             wb.open_new(pathp13)
 
-        if chapterp == 14:
+        elif chapterp == 14:
             pathp14 = 'https://drive.google.com/file/d/1a78WVeu9hIkBv-q9Ls5ZUK7E4olwf1ex/view?usp=sharing'
             opening()
             wb.open_new(pathp14)
 
-        if chapterp == 15:
+        elif chapterp == 15:
             pathp15 = 'https://www.savemyexams.co.uk/a-level/physics/cie/22/revision-notes/'
             opening()
             wb.open_new(pathp15)
 
-        if chapterp == 16:
+        elif chapterp == 16:
             quit()
 
+        else:
+            print("I N V A L I D  I N P U T")
+        print("\n")    
 # N O T E S
-    if menu_number == 2:
+    elif menu_number == 2:
 
         # O P E N E R
         print('''
@@ -245,9 +263,11 @@ Enter the menu number :'''
         print('''Chapter 2: Electrostatic Potential And Capacitance
 ----------------------------------------------------------------------------''')
         time.sleep(0.08)
-        print('''\n3. Derivations
-----------------------------------------------------------------------------'''        )
-        print("4. EXIT\n")
+        print('''3. Derivations
+----------------------------------------------------------------------------''')
+        print("4. EXIT")
+        print("----------------------------------------------------------------------------")
+
 
         time.sleep(1)
         choice = int(input("Choose the chapter number: "))
@@ -256,22 +276,27 @@ Enter the menu number :'''
             pathn1 = "https://drive.google.com/file/d/12lknvtIK7uaHSOoz6vJ1rI7746eHgSCv/view?usp=share_link"
             opening()
             wb.open_new(pathn1)
+            
 
-        if choice == 2:
+        elif choice == 2:
             pathn2 = "https://drive.google.com/file/d/1Zc-FHi_VLshbH5o-6uZRAGOeOzgzUl6l/view?usp=share_link"
             opening()
             wb.open_new(pathn2)
 
-        if choice == 3:
+        elif choice == 3:
             pathn3 = "https://drive.google.com/file/d/1GB5B9cT8svMTO2x-3uS7zpxr7sv_Nz5g/view?usp=share_link"
             opening()
             wb.open_new(pathn3)
 
-        if choice == 4:
+        elif choice == 4:
             quit()
 
+        else:
+            print("I N V A L I D  I N P U T")
+        print("\n")    
+
 # S A M P L E  P A P E R
-    if menu_number == 3:
+    elif menu_number == 3:
         sample_paper = input(
             "\nEnter s for to open a random sample paper and q to quit: ")
 
@@ -286,11 +311,15 @@ Enter the menu number :'''
             opening()
             wb.open_new(paper)
 
+        elif sample_paper == "q":
+            Exit()
+
         else:
-            quit()
+            print("I N V A L I D  I N P U T")
+        print("\n")       
 
 # U N I T  C O N V E R T E R
-    if menu_number == 4:
+    elif menu_number == 4:
         print("Select conversion type:")
         menu_unit_converter='''
 1. Length
@@ -322,7 +351,7 @@ Enter the menu number :'''
             else:
                 print("Invalid conversion")
 
-        if choice == 2:
+        elif choice == 2:
             from_unit = input("Enter the unit you want to convert from (C, F): ")
             to_unit = input("Enter the unit you want to convert to (C, F): ")
             value = float(input("Enter the value: "))
@@ -337,7 +366,7 @@ Enter the menu number :'''
             else:
                 print("Invalid conversion")
 
-        if choice == 3:
+        elif choice == 3:
             from_unit = input("Enter the unit you want to convert from (kg, lb, g): ")
             to_unit = input("Enter the unit you want to convert to (kg, lb, g): ")
             value = float(input("Enter the value: "))
@@ -355,20 +384,28 @@ Enter the menu number :'''
                 print("\n",value / 10000,"kg")
             else:
                 print("Invalid conversion")
-        if choice == 4:
-            quit()
+        elif choice == 4:
+            Exit()
+        
+        else:
+            print("I N V A L I D  I N P U T")
+        print("\n")    
                       
 # Q U I T
     if menu_number == 5:
-        print("T H A N K S  F O R  U S I N G  O U R  G U I D E")
+        print("\nT H A N K S  F O R  U S I N G  O U R  G U I D E")
         Exit()
     
 
 
 # O U T P U T
 show_menu()
+time.sleep(2)
+clear_screen()
 while True:
     time.sleep(1)
-    print("\nWELCOME AGAIN")
+    print("WELCOME AGAIN")
     time.sleep(3)
     show_menu()
+    time.sleep(2)
+    clear_screen()
