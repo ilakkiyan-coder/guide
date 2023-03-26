@@ -10,9 +10,11 @@ random_generation = rd.randint(1,6)
 randomly_generater_quote  ="qoute:", quote[random_generation] 
 print("\n")
 for q in randomly_generater_quote:
-    time.sleep(0.08)
+    time.sleep(0.8)
     print(q,end='')
 print("\n")
+time.sleep(1)
+subprocess.run('cls',shell=True)
 
 #W E L C O M E
 WELCOME = '''***************************************************************************
