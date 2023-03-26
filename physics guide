@@ -3,7 +3,9 @@ import time
 import webbrowser as wb
 import random as rd
 import sys,subprocess
-from playsound import playsound
+from pydub import AudioSegment
+from pydub.playback import play
+ 
 
 subprocess.run('cls',shell=True)
 
@@ -60,8 +62,6 @@ middle()
 for intro in Introduction:
     time.sleep(0.028)
     print(intro, end='')
-playsound('hello.mp3')
-print("voiced by AI")
 
 time.sleep(2)
 subprocess.run('cls',shell=True)
