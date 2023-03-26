@@ -3,36 +3,68 @@ import time
 import webbrowser as wb
 import random as rd
 import sys,subprocess
+from playsound import playsound
+
+subprocess.run('cls',shell=True)
+
+#M I D D L E
+def middle():
+    subprocess.run('cls',shell=True)
+    for i in range (15):
+        for i in range (158):
+            print(' ',end='')
+    print("\n")
+
 
 #Q U O T E 
 quote = ["Don’t let what you cannot do interfere with what you can do.","Successful and unsuccessful people do not vary greatly in their abilities. They vary in their desires to reach their potential.","Strive for progress, not perfection.","There are no shortcuts to any place worth going.","Failure is the opportunity to begin again more intelligently.","Failure is the opportunity to begin again more intelligently.","You’ve got to get up every morning with determination if you’re going to go to bed with satisfaction."]
 random_generation = rd.randint(1,6)
-randomly_generater_quote  ="qoute:", quote[random_generation] 
+randomly_generater_quote  =str(quote[random_generation] )
 print("\n")
+middle()
+for i in range (79):
+    print('',end='')
+print(end='')
+print("quote: ",end='')
 for q in randomly_generater_quote:
-    time.sleep(0.8)
+    time.sleep(0.008)
     print(q,end='')
-print("\n")
-time.sleep(1)
+
+time.sleep(2)
 subprocess.run('cls',shell=True)
 
 #W E L C O M E
-WELCOME = '''***************************************************************************
-**********************************WELCOME**********************************
-***************************************************************************
+ASH= "**************************************************************************************************************************************************************"
+WELCOME = "****************************************************************************WELCOME***************************************************************************"
 
-'''
-for w in WELCOME:
-    time.sleep(0.005)
-    print(w,end='')
 
+for i in range (15):
+    for ash in ASH:
+        time.sleep(0.00008)
+        print('*',end='')
+
+for welcome in WELCOME:
+    time.sleep(0.008)
+    print(welcome,end='')
+
+for i in range (15):
+    for ash in ASH:
+        time.sleep(0.00008)
+        print(ash,end='')
+time.sleep(2)
+subprocess.run('cls',shell=True)
 
 # I N T R O D U C T I O N
-Introduction = ("\nHELLO THERE!!! THIS IS PROGRAM CREATED ESPECIALY FOR CLASS 12 STUDENTS TO MAKE IT \nEASIER TO ACCESS FILES LIKE NOTES AND SAMPLE PAPER FROM ONE PLACE\n")
+Introduction = ("HELLO THERE!!! THIS IS PROGRAM CREATED ESPECIALY FOR CLASS 12 STUDENTS TO MAKE IT EASIER TO ACCESS FILES LIKE NOTES AND SAMPLE PAPER FROM ONE PLACE\n")
+middle()
 for intro in Introduction:
     time.sleep(0.028)
     print(intro, end='')
+playsound('hello.mp3')
+print("voiced by AI")
 
+time.sleep(2)
+subprocess.run('cls',shell=True)
 # 1. Book pdf (lesson number)
 # 2. Notes(lesson number)
 # 3. Sample questions (Theory)(Random generation)
@@ -109,9 +141,11 @@ def opening():
     for v in range(3):
         time.sleep(0.18)
         print(".", end='')
-    print("\n")    
-
+    print("\n")   
+    subprocess.run('cls',shell=True) 
+middle()
 opening()
+
 
 #C O N V E R T I N G
 def converting():
@@ -164,6 +198,9 @@ Enter the menu number : '''
 
 # B O O K
     if menu_number == 1:
+
+        middle()
+        opening()
 
         # I N D E X
         index()
@@ -250,6 +287,9 @@ Enter the menu number : '''
 # N O T E S
     elif menu_number == 2:
 
+        middle()
+        opening()
+
         # O P E N E R
         print('''
 
@@ -299,6 +339,8 @@ Enter the menu number : '''
 
 # S A M P L E  P A P E R
     elif menu_number == 3:
+        middle()
+        opening()
         sample_paper = input(
             "\nEnter s for to open a random sample paper and q to quit: ")
 
@@ -322,6 +364,10 @@ Enter the menu number : '''
 
 # U N I T  C O N V E R T E R
     elif menu_number == 4:
+
+        middle()
+        opening()
+
         print("Select conversion type:")
         menu_unit_converter='''
 1. Length
@@ -401,13 +447,18 @@ Enter the menu number : '''
 
 
 # O U T P U T
+middle()
 show_menu()
 time.sleep(2)
 clear_screen()
 while True:
+    middle()
     time.sleep(1)
     print("WELCOME AGAIN")
+    time.sleep(2)
+    subprocess.run('cls',shell=True)
     time.sleep(3)
+    middle()
     show_menu()
     time.sleep(2)
     clear_screen()
