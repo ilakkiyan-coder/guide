@@ -3,9 +3,11 @@ import time
 import webbrowser as wb
 import random as rd
 import sys,subprocess
+import tkinter as tk
+from tkinter import *
+from tkinter import messagebox
 
  
-
 subprocess.run('cls',shell=True)
 
 #M I D D L E
@@ -18,52 +20,55 @@ def middle():
 
 
 #Q U O T E 
-quote = ["Don’t let what you cannot do interfere with what you can do.","Successful and unsuccessful people do not vary greatly in their abilities. They vary in their desires to reach their potential.","Strive for progress, not perfection.","There are no shortcuts to any place worth going.","Failure is the opportunity to begin again more intelligently.","Failure is the opportunity to begin again more intelligently.","You’ve got to get up every morning with determination if you’re going to go to bed with satisfaction."]
-random_generation = rd.randint(1,6)
-randomly_generater_quote  =str(quote[random_generation] )
-print("\n")
-middle()
-for i in range (79):
-    print('',end='')
-print(end='')
-print("quote: ",end='')
-for q in randomly_generater_quote:
-    time.sleep(0.008)
-    print(q,end='')
+def quote():
+    quote = ["Don’t let what you cannot do interfere with what you can do.","Successful and unsuccessful people do not vary greatly in their abilities. They vary in their desires to reach their potential.","Strive for progress, not perfection.","There are no shortcuts to any place worth going.","Failure is the opportunity to begin again more intelligently.","Failure is the opportunity to begin again more intelligently.","You’ve got to get up every morning with determination if you’re going to go to bed with satisfaction."]
+    random_generation = rd.randint(1,6)
+    randomly_generater_quote  =str(quote[random_generation] )
+    print("\n")
+    middle()
+    for i in range (79):
+        print('',end='')
+    print(end='')
+    print("quote: ",end='')
+    for q in randomly_generater_quote:
+        time.sleep(0.008)
+        print(q,end='')
 
-time.sleep(2)
-subprocess.run('cls',shell=True)
+    time.sleep(2)
+    subprocess.run('cls',shell=True)
 
 #W E L C O M E
-ASH= "**************************************************************************************************************************************************************"
-WELCOME = "****************************************************************************WELCOME***************************************************************************"
+def welcome():
+    ASH= "**************************************************************************************************************************************************************"
+    WELCOME = "****************************************************************************WELCOME***************************************************************************"
 
 
-for i in range (15):
-    for ash in ASH:
-        time.sleep(0.00008)
-        print('*',end='')
+    for i in range (15):
+        for ash in ASH:
+            time.sleep(0.00008)
+            print('*',end='')
 
-for welcome in WELCOME:
-    time.sleep(0.008)
-    print(welcome,end='')
+    for welcome in WELCOME:
+        time.sleep(0.008)
+        print(welcome,end='')
 
-for i in range (15):
-    for ash in ASH:
-        time.sleep(0.00008)
-        print(ash,end='')
-time.sleep(2)
-subprocess.run('cls',shell=True)
+    for i in range (15):
+        for ash in ASH:
+            time.sleep(0.00008)
+            print(ash,end='')
+    time.sleep(2)
+    subprocess.run('cls',shell=True)
 
 # I N T R O D U C T I O N
-Introduction = ("HELLO THERE!!! THIS IS PROGRAM CREATED ESPECIALY FOR CLASS 12 STUDENTS TO MAKE IT EASIER TO ACCESS FILES LIKE NOTES AND SAMPLE PAPER FROM ONE PLACE\n")
-middle()
-for intro in Introduction:
-    time.sleep(0.028)
-    print(intro, end='')
+def intro():
+    Introduction = ("HELLO THERE!!! THIS IS PROGRAM CREATED ESPECIALY FOR CLASS 12 STUDENTS TO MAKE IT EASIER TO ACCESS FILES LIKE NOTES AND SAMPLE PAPER FROM ONE PLACE\n")
+    middle()
+    for intro in Introduction:
+        time.sleep(0.028)
+        print(intro, end='')
 
-time.sleep(2)
-subprocess.run('cls',shell=True)
+    time.sleep(2)
+    subprocess.run('cls',shell=True)
 # 1. Book pdf (lesson number)
 # 2. Notes(lesson number)
 # 3. Sample questions (Theory)(Random generation)
@@ -446,18 +451,58 @@ Enter the menu number : '''
 
 
 # O U T P U T
-middle()
-show_menu()
-time.sleep(2)
-clear_screen()
-while True:
-    middle()
-    time.sleep(1)
-    print("WELCOME AGAIN")
-    time.sleep(2)
-    middle()
-    subprocess.run('cls',shell=True)
-    time.sleep(3)
-    show_menu()
-    time.sleep(2)
-    clear_screen()
+from tkinter import *
+from tkinter import messagebox
+
+# Function to check the password
+def check_password():
+    password = "ilakkiyan"
+    if password_entry.get() == password:
+        messagebox.showinfo("Success", "Login successful!")
+        # Execute your code here after successful login
+        root.destroy()  # Close the tkinter window after successful login
+        quote()
+        welcome()
+        intro()
+        middle()
+        show_menu()
+        time.sleep(2)
+        clear_screen()
+        while True:
+            middle()
+            time.sleep(1)
+            print("WELCOME AGAIN")
+            time.sleep(2)
+            middle()
+            subprocess.run('cls',shell=True)
+            time.sleep(3)
+            show_menu()
+            time.sleep(2)
+            clear_screen()
+    else:
+        messagebox.showerror("Error", "Incorrect password")
+
+# Create the tkinter window
+root = Tk()
+root.geometry("720x480")
+root.title("Login")
+
+# Create the username label and entry
+username_label = Label(root, text="Username:")
+username_label.pack()
+username_entry = Entry(root)
+username_entry.pack()
+
+# Create the password label and entry
+password_label = Label(root, text="Password:")
+password_label.pack()
+password_entry = Entry(root, show="*")
+password_entry.pack()
+
+# Create the login button
+login_button = Button(root, text="Login", command=check_password)
+login_button.pack()
+
+# Run the tkinter event loop
+root.mainloop()
+
