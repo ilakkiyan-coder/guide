@@ -1,0 +1,276 @@
+# I M P O R T I N G
+import time
+import webbrowser as wb
+import random as rd
+import sys,subprocess
+
+subprocess.run('cls',shell=True)
+
+#M I D D L E
+def middle():
+    subprocess.run('cls',shell=True)
+    for i in range (15):
+        for i in range (158):
+            print(' ',end='')
+    print("\n")
+
+
+
+#Q U O T E 
+quote = ["Don’t let what you cannot do interfere with what you can do.","Successful and unsuccessful people do not vary greatly in their abilities. They vary in their desires to reach their potential.","Strive for progress, not perfection.","There are no shortcuts to any place worth going.","Failure is the opportunity to begin again more intelligently.","Failure is the opportunity to begin again more intelligently.","You’ve got to get up every morning with determination if you’re going to go to bed with satisfaction."]
+random_generation = rd.randint(1,6)
+randomly_generater_quote  =str(quote[random_generation] )
+print("\n")
+middle()
+for i in range (79):
+    print('',end='')
+print(end='')
+print("quote: ",end='')
+for q in randomly_generater_quote:
+    time.sleep(0.008)
+    print(q,end='')
+
+time.sleep(2)
+subprocess.run('cls',shell=True)
+
+#W E L C O M E
+ASH= "**************************************************************************************************************************************************************"
+WELCOME = "****************************************************************************WELCOME***************************************************************************"
+
+
+for i in range (15):
+    for ash in ASH:
+        time.sleep(0.00008)
+        print('*',end='')
+
+for welcome in WELCOME:
+    time.sleep(0.008)
+    print(welcome,end='')
+
+for i in range (15):
+    for ash in ASH:
+        time.sleep(0.00008)
+        print(ash,end='')
+time.sleep(2)
+subprocess.run('cls',shell=True)
+
+# I N T R O D U C T I O N
+Introduction = ("HELLO THERE!!! THIS IS PROGRAM CREATED ESPECIALY FOR CLASS 12 STUDENTS TO MAKE IT EASIER TO ACCESS FILES LIKE NOTES AND SAMPLE PAPER FROM ONE PLACE\n")
+middle()
+for intro in Introduction:
+    time.sleep(0.028)
+    print(intro, end='')
+
+def index():
+
+
+    menuc = '''
+
+Unit 1 : The Solid State
+----------------------------------------------------------------------------
+Unit 2 : Solutions
+----------------------------------------------------------------------------
+unit 3  : Electrochemistry
+----------------------------------------------------------------------------
+Unit 4  : Chemical Kinetics
+----------------------------------------------------------------------------
+Unit 5  : Surface Chemistry
+---------------------------------------------------------------------------
+Unit 6  : General Principles and Processes of Isolation of Elements
+----------------------------------------------------------------------------
+Unit 7  : The p-Block Elements
+----------------------------------------------------------------------------
+Unit 8  : The d-and f-Block Elements
+----------------------------------------------------------------------------
+Unit 9  : Coordination Compounds
+----------------------------------------------------------------------------
+Unit 10 : Haloalkanes and Haloarenes
+----------------------------------------------------------------------------
+Unit 11 : Alcohols, Phenols and Ethers
+----------------------------------------------------------------------------
+Unit 12 : Aldehydes, Ketones and Carboxylic Acids
+----------------------------------------------------------------------------
+Unit 13 : Amines
+----------------------------------------------------------------------------
+Unit 14 : Biomolecules
+----------------------------------------------------------------------------
+Unit 15 : Polymers
+----------------------------------------------------------------------------
+Unit 16 : Chemistry in Everyday Life
+----------------------------------------------------------------------------
+'''
+    for s in menuc:
+        time.sleep(0.001)
+        print(s,end='')
+
+# O P E N I N G . . .
+
+def opening():
+    pr = "\nopening"
+    for g in pr:
+        time.sleep(0.008)
+        print(g, end='')
+    for v in range(3):
+        time.sleep(0.18)
+        print(".", end='')
+    print("\n")   
+    subprocess.run('cls',shell=True) 
+middle()
+opening()
+
+
+#C O N V E R T I N G
+def converting():
+    print("converting",end="")
+    for i in range (3):
+        time.sleep(0.8)
+        print(".",end="")
+
+# Y E T   T O  BE  A D D E D
+def exclemetry():
+    for i in range (3):
+        time.sleep(0.8)
+        print("!",end ="")
+
+#C L E A R I N G   T H E   S C R E E N 
+def clear_screen():
+    run_again = 'PRESS ENTER TO RUN AGAIN...'
+    for r in run_again:
+        time.sleep(0.08)
+        print(r,end='')
+    input()
+    subprocess.run('cls', shell=True)
+    
+
+
+#E X I T 
+def Exit():
+    ex = "Initiating exiting protocal ..."
+    for e in ex :
+        time.sleep(0.08)
+        print(e,end='')
+    print("\n")
+    time.sleep(3)
+    quit()
+
+def main_menu():
+# M E N U
+    def show_menu():
+        menu = '''1. Book pdf 
+    2. Notes
+    3. Sample questions (Theory)
+    4. Unit converter
+    5. EXIT
+    Enter the menu number : '''
+        for m in menu:
+            time.sleep(0.028)
+            print(m, end='')
+        print(end='')
+        menu_number = int(input())
+# M A I N   P R O G R A M
+
+# B O O K
+        if menu_number == 1:
+
+            middle()
+            opening()
+
+            # I N D E X
+            index()
+
+# O P E N E R
+            chapterc = int(input("Enter the chemistry chapter number: "))
+            subprocess.run('cls',shell=True)
+            if chapterc == 1:
+                pathc1 = 'https://drive.google.com/file/d/1ZDWjEIhm-I2jhjGYx6dHVREA-_z6RUUp/view?usp=share_link'
+                opening()
+                wb.open_new(pathc1)
+
+            elif chapterc == 2:
+                pathc2= 'https://drive.google.com/file/d/16Ke2aX2GjxOqE-24rxvRCFZOkQBpFeRx/view?usp=share_link'
+                pr = "opening"
+                op = "..."
+                opening()
+                wb.open_new(pathc2)
+
+            elif chapterc == 3:
+                pathc3 = 'https://drive.google.com/file/d/1INCpaE1nStuKIbwHQOf865Q8hdk4piED/view?usp=share_link'
+                opening()
+                wb.open_new(pathc3)
+
+            elif chapterc == 4:
+                pathc4 = 'https://drive.google.com/file/d/1iClyQJn7jWXWsr7eKQuw-skAG63R4Z6e/view?usp=share_link'
+                pr = "opening"
+                opening()
+                wb.open_new(pathc4)
+
+            elif chapterc == 5:
+                pathc5 = 'https://drive.google.com/file/d/1TX0B_0lFATsz0laSc-h144O7rP4Z2pTU/view?usp=share_link'
+                opening()
+                wb.open_new(pathc5)
+
+
+            elif chapterc == 6:
+                pathc6 = 'https://drive.google.com/file/d/1NvXt24tQsN6D0IHmwfXSVXdUOmOcmKuh/view?usp=share_link'
+                opening()
+                wb.open_new(pathc6)
+
+            elif chapterc == 7:
+                pathc7 = 'https://drive.google.com/file/d/1NM-hiqVOCbev8eB09BJd95yt5S8mWgi-/view?usp=share_link'
+                opening()
+                wb.open_new(pathc7)
+
+            elif chapterc == 8:
+                pathc8 = 'https://drive.google.com/file/d/1xNGsxRpqhPH9GfA5fivXHQCSzY2z8hI_/view?usp=share_link'
+                opening()
+                wb.open_new(pathc8)
+
+            elif chapterc == 9:
+                pathc9 = 'https://drive.google.com/file/d/1_w_vzk-_RBdQ5gJnOY9TvWHVGAj0QyGX/view?usp=share_link'
+                opening()
+                wb.open_new(pathc9)
+
+            elif chapterc == 10:
+                pathc10 = 'https://drive.google.com/file/d/1_Nm-zU3Hk1DjvcsBl-rIPM3loIx2X7kW/view?usp=share_link'
+                opening()
+                wb.open_new(pathc10)
+
+            elif chapterc == 11:
+                pathc11 = 'https://drive.google.com/file/d/1hjyzKNx3pfBK4NYUn7Fb2aXbtdiRo8jE/view?usp=share_link'
+                opening()
+                wb.open_new(pathc11)
+
+            elif chapterc == 12:
+                pathc12 = 'https://drive.google.com/file/d/1MfS48Q5sg0q05wA39OIPs2ubAyN3gYOa/view?usp=share_link'
+                opening()
+                wb.open_new(pathc12)
+
+            elif chapterc == 13:
+                pathc13 = 'https://drive.google.com/file/d/1HwpkX9AkGkrCwZjBxveRzuwHVlF0SoNf/view?usp=share_link'
+                opening()
+                wb.open_new(pathc13)
+
+            elif chapterc == 14:
+                pathc14 = 'https://drive.google.com/file/d/1eYkg8cUrTC0ymTO0bOM04ddltzdurRRn/view?usp=share_link'
+                opening()
+                wb.open_new(pathc14)
+
+            elif chapterc == 15:
+                pathc15 = 'https://drive.google.com/file/d/1EZRWDeYeJszVWBjHP2zmvew-vCn-cyjW/view?usp=share_link'
+                opening()
+                wb.open_new(pathc15)
+
+            elif chapterc == 16:
+                pathc16 = 'https://drive.google.com/file/d/1FDHBZlkyTqm7H9YNgrUL7_TyzkdUn7fA/view?usp=share_link'
+                opening()
+                wb.open_new(pathc16)
+
+            else:
+                print("I N V A L I D  I N P U T")
+
+            subprocess.run('cls',shell=True)
+
+        if menu_number == 2:
+            pass
+
+main_menu()

@@ -3,8 +3,7 @@ import time
 import webbrowser as wb
 import random as rd
 import sys,subprocess
-from pydub import AudioSegment
-from pydub.playback import play
+
  
 
 subprocess.run('cls',shell=True)
@@ -456,9 +455,9 @@ while True:
     time.sleep(1)
     print("WELCOME AGAIN")
     time.sleep(2)
+    middle()
     subprocess.run('cls',shell=True)
     time.sleep(3)
-    middle()
     show_menu()
     time.sleep(2)
     clear_screen()
